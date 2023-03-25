@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public bool isGrounded;
     public Vector3 jump;
     public float jumpForce = 2.0f;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +38,10 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(jump * jumpForce, ForceMode.Impulse);
             isGrounded = false;
         }
+        if (Input.GetKeyDown(KeyCode.Space)){
+            animator.SetTrigger("catEmote");
+        }
     }
+
 
 }
