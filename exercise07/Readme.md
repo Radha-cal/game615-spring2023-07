@@ -4,5 +4,11 @@ Bunmi and Radha
 
 
 Assets:
+
 Kitten by Poly by Google [CC-BY] via Poly Pizza
+
 Strawberries by Jarlan Perez [CC-BY] via Poly Pizza
+
+fantasy city generator unity assets store - environment
+
+venti model by fullsus sketchfab
