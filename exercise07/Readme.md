@@ -1,4 +1,4 @@
-Bunmi and Radha
+Bunmi Adeloye and Radha Hosad
 
 [Play](https://radha-cal.github.io/game615-spring2023-07/exercise07/play)
 
