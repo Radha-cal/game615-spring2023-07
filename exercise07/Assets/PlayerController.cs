@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,7 +15,9 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public Animator berryanimator;
     public TextMeshProUGUI playerScoreText;
+    public Vector3 initialPosition;
     float playerScore=0;
+  
 
     // Start is called before the first frame update
     void Start()
@@ -54,8 +57,13 @@ public class PlayerController : MonoBehaviour
             berryanimator.SetTrigger("spriteTrigger");
             Destroy(other.gameObject);
             playerScore ++;
-            playerScoreText.text =  playerScore.ToString()+ " Strawberrys eaten :3 O";
+            playerScoreText.text =  playerScore.ToString()+ "/25 Strawberrys eaten :3 O";
 
         }
     }
-}
+    public void Respawn(){
+       
+            transform.position = new Vector3(0, 0.14f, 0);
+            
+        }
+    }
