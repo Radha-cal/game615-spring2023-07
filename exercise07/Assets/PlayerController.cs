@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
             berryanimator.SetTrigger("spriteTrigger");
             Destroy(other.gameObject);
             playerScore ++;
-            playerScoreText.text =  playerScore.ToString()+ " Strawberrys eaten :3";
+            playerScoreText.text =  playerScore.ToString()+ " Strawberrys eaten :3 O";
 
         }
     }
